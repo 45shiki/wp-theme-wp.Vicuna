@@ -1,0 +1,42 @@
+@charset "utf-8";
+/*
+Theme Name: wp.Vicuna
+Theme URI: http://wp.vicuna.jp/
+Description: <a href="http://en.wp.vicuna.jp">wp.Vicuna</a> Structure Template + <a href="http://wp.vicuna.jp/skin/">Skin</a>
+Version: 2.0.3
+Author: <a href="http://3ping.org/">wu</a>, <a href="http://spais.co.jp/">nic</a>
+*/
+.alignleft{float:left;}
+.alignright{float:right;}
+.alignnone{float:none;}
+pre{text-align:left;}
+ul.number_pager{
+	list-style:none;
+	_height: 1px;
+	min-height: 1px;
+	/*¥*//*/
+	height: 1px;
+	overflow: hidden;
+	/**/
+}
+ul.number_pager:after{
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+ul.number_pager li{
+	float:left;
+}
+ul.number_pager li.current{
+	font-weight:bold;
+}
+ul.number_pager li a{
+	padding:0.25em 0.5em;
+	display:block;
+	border-color:#CCC;
+}
+span.replay{
+	margin-left:0.5em;
+}

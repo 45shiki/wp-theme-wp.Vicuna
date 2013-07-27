@@ -1,0 +1,1056 @@
+# wp.Vicuna 2.0.0 以降用日本語リソース (UTF-8) 
+# Japanese (UTF-8) translation for wp.Vicuna WordPress theme
+# Copyright 2010 SPaiS Inc.
+# This file is licensed GPL Version 2.
+msgid ""
+msgstr ""
+"Project-Id-Version: wp.Vicuna ja\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-23 20:51+0900\n"
+"PO-Revision-Date: 2010-03-23 20:55+0900\n"
+"Last-Translator: HAYASHI Ryo <ryo@spais.co.jp>\n"
+"Language-Team: HAYASHI Ryo <ryo@spais.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Japanese\n"
+"X-Poedit-Country: JAPAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: index.php:10
+#: index.php:40
+#: single.php:11
+#: single.php:42
+#: archive.php:10
+#: archive.php:40
+#: search.php:10
+#: search.php:53
+#: category.php:10
+#: category.php:40
+#: 404.php:10
+#: 404.php:17
+#: page.php:11
+#: page.php:24
+#: tag.php:10
+#: tag.php:40
+#: src/layout.php:119
+#: src/classes.php:1005
+#: src/classes.php:1559
+#: src/config.php:216
+msgid "Home"
+msgstr "ホーム"
+
+#: index.php:20
+#: single.php:27
+#: archive.php:20
+#: category.php:20
+#: comments.php:14
+#: page.php:17
+#: tag.php:20
+msgid "Edit"
+msgstr "編集"
+
+#: index.php:23
+#: single.php:30
+#: archive.php:23
+#: category.php:23
+#: page.php:20
+#: tag.php:23
+msgid "Continue reading"
+msgstr "続きを読む"
+
+#: index.php:27
+#: archive.php:27
+#: category.php:27
+#: tag.php:27
+#, php-format
+msgid "Comments on %s"
+msgstr "%s へのコメント"
+
+#: index.php:27
+#: archive.php:27
+#: category.php:27
+#: comments.php:10
+#: tag.php:27
+msgid "Comments"
+msgstr "コメント"
+
+#: index.php:27
+#: index.php:29
+#: archive.php:27
+#: archive.php:29
+#: category.php:27
+#: category.php:29
+#: comments.php:10
+#: tag.php:27
+#: tag.php:29
+msgid "Comments (Close)"
+msgstr "コメント(閉)"
+
+#: index.php:32
+#: archive.php:32
+#: category.php:32
+#: tag.php:32
+#, php-format
+msgid "Trackbacks to %s"
+msgstr "%s へのトラックバック"
+
+#: index.php:32
+#: archive.php:32
+#: category.php:32
+#: comments.php:71
+#: tag.php:32
+msgid "Trackbacks"
+msgstr "トラックバック"
+
+#: index.php:32
+#: index.php:34
+#: archive.php:32
+#: archive.php:34
+#: category.php:32
+#: category.php:34
+#: comments.php:71
+#: tag.php:32
+#: tag.php:34
+msgid "Trackbacks (Close)"
+msgstr "トラックバック(閉)"
+
+#: single.php:5
+#: archive.php:4
+#: search.php:4
+#: category.php:4
+#: 404.php:4
+#: page.php:5
+#: tag.php:4
+#, php-format
+msgid "Return to %s index"
+msgstr "%s Indexへ戻る"
+
+#: single.php:14
+#: single.php:34
+#: src/classes.php:421
+msgid "Newer"
+msgstr "新しい"
+
+#: single.php:17
+#: single.php:37
+#: src/classes.php:421
+msgid "Older"
+msgstr "古い"
+
+#: single.php:34
+msgid "a newer entry"
+msgstr "1つ新しい記事"
+
+#: single.php:37
+msgid "an older entry"
+msgstr "1つ古い記事"
+
+#: archive.php:10
+#: archive.php:40
+#: sidebar.php:18
+#: src/layout.php:121
+#: src/classes.php:1561
+#: src/config.php:218
+msgid "Archives"
+msgstr "アーカイブ"
+
+#: sidebar.php:5
+#: src/classes.php:726
+msgid "Pages"
+msgstr "ページ"
+
+#: sidebar.php:10
+msgid "Recent Entries"
+msgstr "最近の投稿"
+
+#: sidebar.php:14
+msgid "Categories"
+msgstr "カテゴリ"
+
+#: sidebar.php:21
+msgid "Tag Cloud"
+msgstr "タグクラウド"
+
+#: sidebar.php:28
+#: sidebar.php:40
+#: src/classes.php:272
+#: src/config.php:182
+msgid "Search"
+msgstr "検索"
+
+#: sidebar.php:32
+#: src/classes.php:279
+#, php-format
+msgid "Search %s"
+msgstr "%s内の検索"
+
+#: sidebar.php:36
+#: sidebar.php:39
+msgid "Keyword(s)"
+msgstr "Keyword(s)"
+
+#: sidebar.php:45
+msgid "Feeds"
+msgstr "フィード"
+
+#: sidebar.php:48
+#: sidebar.php:49
+msgid "All Entries"
+msgstr "全ての記事"
+
+#: sidebar.php:50
+msgid "All Comments"
+msgstr "全てのコメント"
+
+#: sidebar.php:53
+#: src/classes.php:458
+msgid "Meta"
+msgstr "メタ情報"
+
+#: sidebar.php:56
+msgid "This page validates as XHTML 1.0 Strict"
+msgstr "このページは XHTML 1.0 Strict に準拠しています。"
+
+#: sidebar.php:56
+msgid "Valid <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
+msgstr "<abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr> 準拠"
+
+#: search.php:10
+#: search.php:11
+#: search.php:39
+#: search.php:53
+msgid "Search Result"
+msgstr "検索結果"
+
+#: search.php:15
+#: search.php:37
+#, php-format
+msgid "<li>Search: <em>%s</em></li><li><em><span class=\"count\">%s</span></em> Hits</li>"
+msgstr "<li>検索: <em>%s</em></li><li><em><span class=\"count\">%s</span></em> 件</li>"
+
+#: search.php:21
+msgid "Posted date: "
+msgstr "投稿日:"
+
+#: search.php:26
+#: src/classes.php:1215
+msgid "Posted by: "
+msgstr "投稿者:"
+
+#: search.php:27
+msgid "Category: "
+msgstr "カテゴリ"
+
+#: search.php:28
+msgid "Tag: "
+msgstr "タグ"
+
+#: search.php:41
+#, php-format
+msgid "Your search - <em>%s</em> -- did not match any documents."
+msgstr "<em>%s</em>というキーワードを含む記事は見つかりませんでした。"
+
+#: search.php:42
+msgid "Suggestions:"
+msgstr "次項のヒントを参考にして、検索キーワードを変えてもう一度検索してみてください。"
+
+#: search.php:44
+msgid "Make sure all words are spelled correctly."
+msgstr "キーワードに誤字や脱字がありませんか ?"
+
+#: search.php:45
+msgid "Try different keywords."
+msgstr "キーワードの意味はそのままで、表現や言い回しを変えてみてください。"
+
+#: search.php:46
+msgid "Try more general keywords."
+msgstr "専門的なキーワードだったり、長い文字列のキーワードだったりした場合は、より一般的で短いキーワードにしてください。"
+
+#: search.php:47
+msgid "Try decreasing the number of keywords."
+msgstr "キーワードを複数指定している場合は、キーワードの数を減らしてみてください。"
+
+#: category.php:11
+#: src/classes.php:949
+#: src/classes.php:1233
+#, php-format
+msgid "%s Archive"
+msgstr "%sのアーカイブ"
+
+#: comments.php:21
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "コメントを投稿するには<a href=\"%s\">ログイン</a>してください。"
+
+#: comments.php:25
+msgid "Comment Form"
+msgstr "コメントフォーム"
+
+#: comments.php:29
+msgid "Logged in"
+msgstr "ログイン"
+
+#: comments.php:30
+msgid "Log out of this account"
+msgstr "ログアウトしました"
+
+#: comments.php:30
+msgid "Logout"
+msgstr "ログアウト"
+
+#: comments.php:32
+msgid "Name"
+msgstr "お名前"
+
+#: comments.php:32
+#: comments.php:34
+msgid "required"
+msgstr "必須"
+
+#: comments.php:34
+msgid "Mail address"
+msgstr "メールアドレス"
+
+#: comments.php:34
+msgid "will not be published"
+msgstr "非公開"
+
+#: comments.php:42
+msgid "Remember personal info"
+msgstr "入力した情報を記憶する"
+
+#: comments.php:43
+#: src/classes.php:1554
+#: src/classes.php:1556
+msgid "Yes"
+msgstr "はい"
+
+#: comments.php:43
+msgid "Forget Info"
+msgstr "記憶した情報を削除する"
+
+#: comments.php:43
+#: src/classes.php:1554
+#: src/classes.php:1556
+msgid "No"
+msgstr "いいえ"
+
+#: comments.php:45
+msgid "Comment"
+msgstr "コメント"
+
+#: comments.php:45
+msgid "<span>You can use some <abbr title=\"Hyper Text Markup Language\">HTML</abbr> tags for decorating.</span>"
+msgstr "<span>スタイル指定用の一部の <abbr title=\"Hyper Text Markup Language\">HTML</abbr>タグが使用できます。</span>"
+
+#: comments.php:46
+#: comments.php:50
+msgid "Add Your Comment"
+msgstr "あなたのコメントを追加して下さい。"
+
+#: comments.php:54
+msgid "Post"
+msgstr "投稿"
+
+#: comments.php:74
+msgid "Trackback URL for this entry"
+msgstr "この記事のトラックバック URL"
+
+#: comments.php:76
+msgid "Listed below are links to weblogs that reference"
+msgstr "トラックバックの送信元リスト"
+
+#: comments.php:77
+#, php-format
+msgid "<a href=\"%s\">%s</a> from <a href=\"%s\">%s</a>"
+msgstr "<a href=\"%s\">%s</a> - <a href=\"%s\">%s</a> より"
+
+#: comments.php:83
+#, php-format
+msgid "%s from %s"
+msgstr "%s - %s より"
+
+#: 404.php:10
+#: 404.php:11
+#: 404.php:17
+#: src/classes.php:945
+msgid "Error 404"
+msgstr "404 エラー"
+
+#: 404.php:11
+msgid "Not Found"
+msgstr "見つかりません"
+
+#: 404.php:14
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "ごめんなさい。お探しのページは見つかりませんでした。"
+
+#: footer.php:1
+msgid "Return to page top"
+msgstr "ページの上部に戻る"
+
+#: footer.php:6
+msgid "Theme"
+msgstr "テーマ"
+
+#: footer.php:8
+#, php-format
+msgid "Copyright &copy; %s All Rights Reserved."
+msgstr "Copyright &copy; %s All Rights Reserved."
+
+#: tag.php:10
+#: tag.php:40
+msgid "Tags"
+msgstr "タグ"
+
+#: functions.php:143
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "この投稿はパスワードで保護されています。パスワードを入力して下さい。"
+
+#: functions.php:189
+msgid "Edit This Comments."
+msgstr "コメントを編集する。"
+
+#: src/layout.php:80
+#: src/layout.php:107
+#: src/config.php:151
+#: src/config.php:192
+msgid "General"
+msgstr "一般"
+
+#: src/layout.php:81
+#: src/config.php:156
+msgid "Global navigation display"
+msgstr "グローバルナビゲーションの表示"
+
+#: src/layout.php:82
+#: src/config.php:157
+msgid "Global navigation \"Home\" to display"
+msgstr "グローバルナビゲーションに\"ホーム\"を表示する"
+
+#: src/layout.php:83
+#: src/config.php:158
+msgid "Global navigation position"
+msgstr "グローバルナビゲーションの位置"
+
+#: src/layout.php:84
+#: src/config.php:159
+msgid "Description display"
+msgstr "説明(Description)を表示する"
+
+#: src/layout.php:85
+#: src/config.php:160
+msgid "Centering"
+msgstr "真ん中寄せ"
+
+#: src/layout.php:87
+#: src/layout.php:88
+#: src/layout.php:108
+#: src/config.php:162
+#: src/config.php:163
+#: src/config.php:193
+msgid "Skin"
+msgstr "スキン"
+
+#: src/layout.php:89
+#: src/config.php:164
+msgid "Eye catch"
+msgstr "アイキャッチ"
+
+#: src/layout.php:90
+#: src/config.php:165
+msgid "Fixed width"
+msgstr "固定幅"
+
+#: src/layout.php:92
+#: src/layout.php:109
+#: src/config.php:167
+#: src/config.php:194
+msgid "Layout"
+msgstr "レイアウト"
+
+#: src/layout.php:93
+#: src/config.php:168
+msgid "Index layout"
+msgstr "ホームページのレイアウト"
+
+#: src/layout.php:94
+#: src/config.php:169
+msgid "Category layout"
+msgstr "カテゴリアーカイブのレイアウト"
+
+#: src/layout.php:95
+#: src/config.php:170
+msgid "Archive layout"
+msgstr "アーカイブページのレイアウト"
+
+#: src/layout.php:96
+#: src/config.php:171
+msgid "Tag layout"
+msgstr "タグアーカイブのレイアウト"
+
+#: src/layout.php:97
+#: src/config.php:172
+msgid "Page layout"
+msgstr "ページのレイアウト"
+
+#: src/layout.php:98
+#: src/config.php:173
+msgid "Single layout"
+msgstr "記事のレイアウト"
+
+#: src/layout.php:99
+#: src/config.php:174
+msgid "Search layout"
+msgstr "検索結果のレイアウト"
+
+#: src/layout.php:100
+#: src/config.php:175
+msgid "404 layout"
+msgstr "ページが見つからない場合のレイアウト"
+
+#: src/layout.php:104
+msgid "Vicuna Layout Manager"
+msgstr "Vicuna レイアウトマネージャー"
+
+#: src/layout.php:114
+#: src/config.php:207
+msgid "Save Changes"
+msgstr "変更を保存する"
+
+#: src/layout.php:116
+#: src/config.php:213
+msgid "Sample"
+msgstr "見本"
+
+#: src/layout.php:117
+#: src/config.php:214
+msgid "Please click the template you want."
+msgstr "表示したいテンプレートをクリックして下さい。"
+
+#: src/layout.php:120
+#: src/classes.php:1553
+#: src/config.php:217
+msgid "Category"
+msgstr "カテゴリ"
+
+#: src/layout.php:122
+#: src/config.php:219
+msgid "Tag"
+msgstr "タグ"
+
+#: src/layout.php:123
+#: src/classes.php:1553
+#: src/classes.php:1563
+#: src/config.php:220
+msgid "Page"
+msgstr "ページ"
+
+#: src/layout.php:124
+#: src/classes.php:1563
+msgid "Entry"
+msgstr "記事"
+
+#: src/layout.php:125
+#: src/classes.php:1564
+#: src/config.php:222
+msgid "Search result"
+msgstr "検索結果"
+
+#: src/layout.php:126
+#: src/classes.php:1565
+#: src/config.php:223
+msgid "Page not found"
+msgstr "ページが見つかりません"
+
+#: src/layout.php:128
+#: src/config.php:225
+msgid "Please enable JavaScript."
+msgstr "JavaScript を有効にして下さい。"
+
+#: src/classes.php:102
+msgid "Saved."
+msgstr "保存しました。"
+
+#: src/classes.php:298
+#: src/classes.php:432
+#: src/classes.php:481
+#: src/classes.php:522
+#: src/classes.php:568
+#: src/classes.php:627
+#: src/classes.php:688
+#: src/classes.php:745
+msgid "Title:"
+msgstr "タイトル:"
+
+#: src/classes.php:307
+msgid "Search (Vicuna)"
+msgstr "検索 (Vicuna)"
+
+#: src/classes.php:414
+msgid "Calendar"
+msgstr "カレンダー"
+
+#: src/classes.php:420
+#, php-format
+msgid " %1$s %2$s "
+msgstr " %2$s 年 %1$s "
+
+#: src/classes.php:421
+msgid "Monthly calendar"
+msgstr "月別カレンダー"
+
+#: src/classes.php:441
+msgid "Calendar (Vicuna)"
+msgstr "カレンダー (Vicuna)"
+
+#: src/classes.php:490
+msgid "Meta (Vicuna)"
+msgstr "メタ情報 (Vicuna)"
+
+#: src/classes.php:507
+msgid "Tag cloud"
+msgstr "タグクラウド"
+
+#: src/classes.php:531
+msgid "Tag cloud (Vicuna)"
+msgstr "タグクラウド (Vicuna)"
+
+#: src/classes.php:552
+msgid "Recent reactions"
+msgstr "最近の反応"
+
+#: src/classes.php:571
+msgid "Number of reactions to show:"
+msgstr "表示する最近の反応の数"
+
+#: src/classes.php:572
+#: src/classes.php:631
+#: src/classes.php:692
+msgid "(at most 15)"
+msgstr "(多くとも15件)"
+
+#: src/classes.php:573
+msgid "Display recent comments and pingbacks and trackback."
+msgstr "最近のコメント、ピンバック、トラックバックを表示します。"
+
+#: src/classes.php:591
+msgid "Recent reactions (Vicuna)"
+msgstr "最近の反応 (Vicuna)"
+
+#: src/classes.php:611
+msgid "Recent comments"
+msgstr "最近のコメント"
+
+#: src/classes.php:630
+msgid "Number of comments to show:"
+msgstr "表示する最近のコメントの数"
+
+#: src/classes.php:649
+msgid "Recent comments (Vicuna)"
+msgstr "最近のコメント (Vicuna)"
+
+#: src/classes.php:670
+msgid "Recent pings"
+msgstr "最近のピン"
+
+#: src/classes.php:691
+msgid "Number of pings to show:"
+msgstr "表示する最近のトラックバック、ピンバックの数"
+
+#: src/classes.php:710
+msgid "Recent pings (Vicuna)"
+msgstr "最近のピンバックとトラックバック (Vicuna)"
+
+#: src/classes.php:746
+msgid "Sort by:"
+msgstr "ソート:"
+
+#: src/classes.php:750
+msgid "Page title"
+msgstr "記事のタイトル"
+
+#: src/classes.php:751
+msgid "Page order"
+msgstr "ページの並び順"
+
+#: src/classes.php:752
+msgid "Page ID"
+msgstr "ページ番号"
+
+#: src/classes.php:754
+msgid "Exclude:"
+msgstr "除外:"
+
+#: src/classes.php:755
+msgid "Page IDs, separated by commas."
+msgstr "ページ番号はカンマで区切って下さい。"
+
+#: src/classes.php:764
+msgid "Pages (Vicuna)"
+msgstr "ページ (Vicuna)"
+
+#: src/classes.php:836
+msgid "Newer Entries"
+msgstr "新しい記事"
+
+#: src/classes.php:837
+msgid "Older Entries"
+msgstr "古い記事"
+
+#: src/classes.php:873
+msgid "&lt; Previous pages"
+msgstr "&lt; 前のページ"
+
+#: src/classes.php:889
+msgid "Next pages &gt;"
+msgstr "次のページ &gt;"
+
+#: src/classes.php:1161
+#, php-format
+msgid "%d Entries"
+msgstr "%d 記事"
+
+#: src/classes.php:1228
+msgid "Y-m-d"
+msgstr "Y年n月j日"
+
+#: src/classes.php:1229
+msgid "Y-m"
+msgstr "Y年n月"
+
+#: src/classes.php:1230
+msgid "Y"
+msgstr "Y年"
+
+#: src/classes.php:1231
+msgid "Author"
+msgstr "投稿者"
+
+#: src/classes.php:1546
+#: src/classes.php:1621
+msgid "Default"
+msgstr "既定"
+
+#: src/classes.php:1546
+msgid "Japanese"
+msgstr "日本語"
+
+#: src/classes.php:1547
+msgid "Taiwanese"
+msgstr "台湾語"
+
+#: src/classes.php:1547
+msgid "Chinese"
+msgstr "中国語"
+
+#: src/classes.php:1548
+msgid "English"
+msgstr "英語"
+
+#: src/classes.php:1549
+msgid "Blog name"
+msgstr "ブログ名"
+
+#: src/classes.php:1550
+msgid "Entry title"
+msgstr "記事のタイトル"
+
+#: src/classes.php:1551
+msgid "Around"
+msgstr "前後"
+
+#: src/classes.php:1551
+msgid "Numbers"
+msgstr "番号"
+
+#: src/classes.php:1552
+msgid "Display"
+msgstr "表示"
+
+#: src/classes.php:1552
+msgid "Not displayed"
+msgstr "非表示"
+
+#: src/classes.php:1553
+msgid "No display"
+msgstr "表示しない"
+
+#: src/classes.php:1555
+msgid "Top"
+msgstr "上"
+
+#: src/classes.php:1555
+msgid "Normal"
+msgstr "標準"
+
+#: src/classes.php:1557
+msgid "Not"
+msgstr "しない"
+
+#: src/classes.php:1557
+msgid "Do"
+msgstr "する"
+
+#: src/classes.php:1558
+msgid "Enable"
+msgstr "有効"
+
+#: src/classes.php:1558
+msgid "Disable"
+msgstr "無効"
+
+#: src/classes.php:1560
+msgid "Category archive"
+msgstr "カテゴリアーカイブ"
+
+#: src/classes.php:1562
+msgid "Tag archive"
+msgstr "タグアーカイブ"
+
+#: src/classes.php:1567
+msgid "None"
+msgstr "なし"
+
+#: src/classes.php:1568
+msgid "Header area"
+msgstr "ヘッダー部分"
+
+#: src/classes.php:1569
+msgid "Header area (Banner type)"
+msgstr "ヘッダー部分(バナータイプ)"
+
+#: src/classes.php:1570
+msgid "Contents area"
+msgstr "コンテンツ部分"
+
+#: src/classes.php:1571
+msgid "Main area"
+msgstr "メイン"
+
+#: src/classes.php:1572
+msgid "Single column"
+msgstr "シングルカラム"
+
+#: src/classes.php:1573
+msgid "2 columns (Right main)"
+msgstr "2カラム(右メイン)"
+
+#: src/classes.php:1574
+msgid "2 columns (Left main)"
+msgstr "2カラム(左メイン)"
+
+#: src/classes.php:1575
+msgid "3 columns (Center main)"
+msgstr "3カラム(真ん中メイン)"
+
+#: src/classes.php:1576
+msgid "3 columns (Right main)"
+msgstr "3カラム(右メイン)"
+
+#: src/classes.php:1577
+msgid "3 columns (Left main)"
+msgstr "3カラム(左メイン)"
+
+#: src/classes.php:1578
+msgid "Special layout 1"
+msgstr "スペシャルレイアウト1"
+
+#: src/classes.php:1579
+msgid "Special layout 2"
+msgstr "スペシャルレイアウト2"
+
+#: src/classes.php:1580
+msgid "Not fixed"
+msgstr "固定しない"
+
+#: src/classes.php:1581
+msgid "Fixed 800 px"
+msgstr "800px に固定"
+
+#: src/classes.php:1581
+msgid "Fixed 850 px"
+msgstr "850px に固定"
+
+#: src/classes.php:1582
+msgid "Fixed 900 px"
+msgstr "900px に固定"
+
+#: src/classes.php:1582
+msgid "Fixed 950 px"
+msgstr "950px に固定"
+
+#: src/classes.php:1583
+msgid "Fixed 1000 px"
+msgstr "1000px に固定"
+
+#: src/classes.php:1618
+msgid "Nothing Vicuna theme skin."
+msgstr "Vicuna テーマのスキンがありません。"
+
+#: src/classes.php:1754
+#: src/config.php:189
+msgid "Vicuna Theme Manager"
+msgstr "Vicuna テーママネージャー"
+
+#: src/classes.php:1755
+msgid "Vicuna Theme manager"
+msgstr "Vicuna テーママネージャー"
+
+#: src/classes.php:1755
+msgid "Configure"
+msgstr "設定"
+
+#: src/classes.php:1825
+msgid "Page has expired. Please refresh the page."
+msgstr "ページの有効期限が過ぎています。ページを更新して下さい。"
+
+#: src/config.php:56
+msgid "Search Kuler"
+msgstr "kuler で検索"
+
+#: src/config.php:64
+#: src/config.php:70
+msgid "Loading..."
+msgstr "読込中..."
+
+#: src/config.php:152
+msgid "Language"
+msgstr "言語"
+
+#: src/config.php:153
+msgid "Title"
+msgstr "タイトル"
+
+#: src/config.php:154
+msgid "Paging"
+msgstr "ページング"
+
+#: src/config.php:155
+msgid "From the posted"
+msgstr "記事の投稿者"
+
+#: src/config.php:177
+#: src/config.php:178
+msgid "Enable color"
+msgstr "カラー有効にする"
+
+#: src/config.php:180
+#: src/config.php:195
+msgid "Color"
+msgstr "カラー"
+
+#: src/config.php:181
+msgid "Color information"
+msgstr "カラー情報"
+
+#: src/config.php:183
+msgid "Popular color"
+msgstr "人気のカラー"
+
+#: src/config.php:184
+msgid "Recent upload"
+msgstr "最近アップロードされたカラー"
+
+#: src/config.php:185
+msgid "Color list"
+msgstr "カラーリスト"
+
+#: src/config.php:209
+msgid "wp.Vicuna.ext take over the settings"
+msgstr "wp.Vicuna.ext の設定を引き継ぐ"
+
+#: src/config.php:221
+msgid "Article"
+msgstr "記事"
+
+#: src/config.php:228
+msgid "Previous settings will be deleted. Are you sure?"
+msgstr "以前の設定は削除されます。よろしいですか？"
+
+#: src/config.php:229
+msgid "Took over."
+msgstr "引き継ぎました。"
+
+#: src/config.php:231
+msgid "Wait..."
+msgstr "お待ち下さい..."
+
+#: src/config.php:250
+msgid "Choose \"Language\" is invalid."
+msgstr "\"言語\"の選択が正しくありません。"
+
+#: src/config.php:257
+msgid "Choose \"Title\" is invalid."
+msgstr "\"タイトル\"の選択が正しくありません。"
+
+#: src/config.php:263
+msgid "Choose \"Title separator\" is invalid."
+msgstr "タイトルの区切り文字が正しくありません。"
+
+#: src/config.php:269
+msgid "Choose \"Paging\" is invalid."
+msgstr "\"ページング\"の選択が正しくありません。"
+
+#: src/config.php:275
+msgid "Choose \"Author\" is invalid."
+msgstr "\"記事の投稿者\"の選択が正しくありません。"
+
+#: src/config.php:281
+msgid "Choose \"Skin\" is invalid."
+msgstr "\"スキン\"の選択が正しくありません。"
+
+#: src/config.php:290
+msgid "Choose \"Eye catch\" is invalid."
+msgstr "\"アイキャッチ\"の選択が正しくありません。"
+
+#: src/config.php:296
+msgid "Choose \"Global navigation display\" is invalid."
+msgstr "\"グローバルナビゲーションの表示\"が正しくありません。"
+
+#: src/config.php:302
+msgid "Choose \"Global navigation \"Home\" to display\" is invalid."
+msgstr "\"グローバルナビゲーションに\"ホーム\"を表示する\"が正しくありません。"
+
+#: src/config.php:308
+msgid "Choose \"Global navigation position\" is invalid."
+msgstr "\"グローバルナビゲーションの位置\"が正しくありません。"
+
+#: src/config.php:314
+msgid "Choose \"Description display\" is invalid."
+msgstr "\"説明(Description)を表示する\"が正しくありません。"
+
+#: src/config.php:320
+msgid "Choose \"Centering\" is invalid."
+msgstr "\"真ん中寄せ\"の選択が正しくありません"
+
+#: src/config.php:326
+msgid "Choose \"Fixed width\" is invalid."
+msgstr "\"固定幅\"の選択が正しくありません。"
+
+#: src/config.php:339
+#, php-format
+msgid "Choose \"%s layout\" is invalid."
+msgstr "\"%sレイアウト\"の選択が正しくありません。"
+
+#~ msgid "Nothing Vicuna theme eye-catch."
+#~ msgstr "Vicuna テーマのアイキャッチがありません。"
+
+#~ msgid "Nothing Vicuna theme fixed width."
+#~ msgstr "Vicuna テーマの固定幅がありません。"
+
+#~ msgid "Vicuna Layout manager"
+#~ msgstr "Vicuna レイアウトマネージャー"
+
+#~ msgid "RSS + XML"
+#~ msgstr "RSS + XML"
+
+#~ msgid "ATOM + XML"
+#~ msgstr "ATOM + XML"
+
+#~ msgid "Settings"
+#~ msgstr "設定"
