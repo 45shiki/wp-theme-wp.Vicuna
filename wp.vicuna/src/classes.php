@@ -66,7 +66,7 @@ class VicunaPager {
      * @param  $vp array POST parameter
      * @return boolean
      */
-    function validate(&$vp)
+    function validate($vp)
     {
     }
 
@@ -254,7 +254,7 @@ class VicunaWidget {
      */
     function VicunaWidget()
     {
-        add_action('widgets_init', array(&$this, 'action_widget_init'));
+        add_action('widgets_init', array($this, 'action_widget_init'));
         foreach($this -> enable_sidebars as $sidebar)
         register_sidebar(array('name' => $sidebar, 'id' => $sidebar,
                 'before_widget' => $this -> before_widget,
@@ -828,7 +828,7 @@ class VicunaTheme {
     {
         $config = &Vicuna :: config();
         $type = $config -> get_option('vicuna-paging');
-        $paging = method_exists(&$this, "paging_{$type}")? call_user_func(array($this, "paging_{$type}"), $args): nulll;
+        $paging = method_exists($this, "paging_{$type}")? call_user_func(array($this, "paging_{$type}"), $args): nulll;
         if ($echo === true) echo $paging;
         return $paging;
     }
@@ -1058,7 +1058,7 @@ class VicunaTheme {
         $args = wp_parse_args($args, array('cat_id' => 0, 'separator' => ' | '));
         if (empty($args['cat_id'])) {
             global $cat;
-            $args['cat_id'] = &$cat;
+            $args['cat_id'] = $cat;
         }
         if (!isset($relays[$args['cat_id']])) {
             $cate = &get_category($args['cat_id']);
@@ -1613,13 +1613,13 @@ class VicunaTheme {
     function VicunaTheme()
     {
         load_textdomain('vicuna', dirname(__FILE__) . '/languages/' . get_locale() . '.mo');
-        add_action('wp', array(&$this, 'action_wp'));
-        add_action('wp_head', array(&$this, 'action_wp_head'));
-        add_filter('posts_fields_request', array(&$this, 'filter_posts_fields_request'));
-        add_filter('the_posts', array(&$this, 'filter_the_posts'));
-        add_filter('page_head_title', array(&$this, 'filter_page_head_title'));
-        add_filter('wp_list_pages', array(&$this, 'filter_wp_list_pages'));
-        add_filter('wp_list_categories', array(&$this, 'filter_wp_list_categories'));
+        add_action('wp', array($this, 'action_wp'));
+        add_action('wp_head', array($this, 'action_wp_head'));
+        add_filter('posts_fields_request', array($this, 'filter_posts_fields_request'));
+        add_filter('the_posts', array($this, 'filter_the_posts'));
+        add_filter('page_head_title', array($this, 'filter_page_head_title'));
+        add_filter('wp_list_pages', array($this, 'filter_wp_list_pages'));
+        add_filter('wp_list_categories', array($this, 'filter_wp_list_categories'));
     }
 }
 
@@ -2027,9 +2027,9 @@ class VicunaConfig {
      */
     function VicunaConfig()
     {
-        add_action('wp', array(&$this, 'action_wp'));
-        add_action('admin_menu', array(&$this, 'action_admin_menu'));
-        add_action('admin_init', array(&$this, 'action_admin_init'));
+        add_action('wp', array($this, 'action_wp'));
+        add_action('admin_menu', array($this, 'action_admin_menu'));
+        add_action('admin_init', array($this, 'action_admin_init'));
     }
 }
 
@@ -2146,10 +2146,10 @@ class VicunaAjax {
      */
     function VicunaAjax()
     {
-        add_action('wp_ajax_vicuna_transition', array(&$this, 'action_transition'));
-        add_action('wp_ajax_vicuna_sample_url', array(&$this, 'action_sample_url'));
-        add_action('wp_ajax_vicuna_color', array(&$this, 'action_color'));
-        add_action('wp_ajax_vicuna_delete_color', array(&$this, 'action_delete_color'));
+        add_action('wp_ajax_vicuna_transition', array($this, 'action_transition'));
+        add_action('wp_ajax_vicuna_sample_url', array($this, 'action_sample_url'));
+        add_action('wp_ajax_vicuna_color', array($this, 'action_color'));
+        add_action('wp_ajax_vicuna_delete_color', array($this, 'action_delete_color'));
     }
 }
 

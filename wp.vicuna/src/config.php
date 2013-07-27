@@ -185,41 +185,41 @@ class VicunaConfigPager extends VicunaPager {
         $layout_option = $config -> get_option('layout');
 
         $file = basename(__FILE__);
-        add_settings_section('general', __('General', 'vicuna'), array(&$this, 'get_section'), $file);
-        add_settings_field('language', __('Language', 'vicuna'), array(&$this, '_get_element_select'), $file, 'general', array('vicuna-language', $config -> enable_languages));
-        add_settings_field('title', __('Title', 'vicuna'), array(&$this, 'get_element_title'), $file, 'general');
-        add_settings_field('paging', __('Paging', 'vicuna'), array(&$this, '_get_element_radio'), $file, 'general', array('vicuna-paging', $config -> enable_pagings));
-        add_settings_field('author', __('From the posted', 'vicuna'), array(&$this, '_get_element_radio'), $file, 'general', array('vicuna-author', $config -> enable_authors));
-        add_settings_field('g_navi_display', __('Global navigation display', 'vicuna'), array(&$this, '_get_element_radio'), $file, 'general', array('vicuna-g_navi-display', $config -> enable_g_navi_display));
-        add_settings_field('g_navi_home', __('Global navigation "Home" to display', 'vicuna'), array(&$this, '_get_element_radio'), $file, 'general', array('vicuna-g_navi-home', $config -> enable_g_navi_home));
-        add_settings_field('g_navi_pos', __('Global navigation position', 'vicuna'), array(&$this, '_get_element_radio'), $file, 'general', array('vicuna-g_navi-pos', $config -> enable_g_navi_pos));
-        add_settings_field('description', __('Description display', 'vicuna'), array(&$this, '_get_element_radio'), $file, 'general', array('vicuna-description', $config -> enable_description));
-        add_settings_field('nocenter', __('Centering', 'vicuna'), array(&$this, '_get_element_radio'), $file, 'general', array('vicuna-nocenter', $config -> enable_nocenter));
+        add_settings_section('general', __('General', 'vicuna'), array($this, 'get_section'), $file);
+        add_settings_field('language', __('Language', 'vicuna'), array($this, '_get_element_select'), $file, 'general', array('vicuna-language', $config -> enable_languages));
+        add_settings_field('title', __('Title', 'vicuna'), array($this, 'get_element_title'), $file, 'general');
+        add_settings_field('paging', __('Paging', 'vicuna'), array($this, '_get_element_radio'), $file, 'general', array('vicuna-paging', $config -> enable_pagings));
+        add_settings_field('author', __('From the posted', 'vicuna'), array($this, '_get_element_radio'), $file, 'general', array('vicuna-author', $config -> enable_authors));
+        add_settings_field('g_navi_display', __('Global navigation display', 'vicuna'), array($this, '_get_element_radio'), $file, 'general', array('vicuna-g_navi-display', $config -> enable_g_navi_display));
+        add_settings_field('g_navi_home', __('Global navigation "Home" to display', 'vicuna'), array($this, '_get_element_radio'), $file, 'general', array('vicuna-g_navi-home', $config -> enable_g_navi_home));
+        add_settings_field('g_navi_pos', __('Global navigation position', 'vicuna'), array($this, '_get_element_radio'), $file, 'general', array('vicuna-g_navi-pos', $config -> enable_g_navi_pos));
+        add_settings_field('description', __('Description display', 'vicuna'), array($this, '_get_element_radio'), $file, 'general', array('vicuna-description', $config -> enable_description));
+        add_settings_field('nocenter', __('Centering', 'vicuna'), array($this, '_get_element_radio'), $file, 'general', array('vicuna-nocenter', $config -> enable_nocenter));
 
-        add_settings_section('skin', __('Skin', 'vicuna'), array(&$this, 'get_section'), $file);
-        add_settings_field('skin', __('Skin', 'vicuna'), array(&$this, '_get_element_select'), $file, 'skin', array('vicuna-skin', $config -> enable_skins));
-        add_settings_field('fixed_width', __('Fixed width', 'vicuna'), array(&$this, '_get_element_select'), $file, 'skin', array('vicuna-fixed_width', $config -> enable_fixed_widths));
-        add_settings_field('eye_catch', __('Eye catch type', 'vicuna'), array(&$this, '_get_element_select'), $file, 'skin', array('vicuna-eye_catch', $config -> enable_eye_catches)); 
-        // add_settings_field('eye_catch_image', __('Eye catch image', 'vicuna'), array(&$this, 'get_element_eye_catch_image'), $file, 'skin');
-        add_settings_section('layout', __('Layout', 'vicuna'), array(&$this, 'get_section'), $file);
-        add_settings_field('index_layout', __('Index layout', 'vicuna'), array(&$this, 'get_element_layout'), $file, 'layout', array('template' => 'index'));
-        add_settings_field('category_layout', __('Category layout', 'vicuna'), array(&$this, 'get_element_layout'), $file, 'layout', array('template' => 'category'));
-        add_settings_field('archive_layout', __('Archive layout', 'vicuna'), array(&$this, 'get_element_layout'), $file, 'layout', array('template' => 'archive'));
-        add_settings_field('tag_layout', __('Tag layout', 'vicuna'), array(&$this, 'get_element_layout'), $file, 'layout', array('template' => 'tag'));
-        add_settings_field('page_layout', __('Page layout', 'vicuna'), array(&$this, 'get_element_layout'), $file, 'layout', array('template' => 'page'));
-        add_settings_field('single_layout', __('Single layout', 'vicuna'), array(&$this, 'get_element_layout'), $file, 'layout', array('template' => 'single'));
-        add_settings_field('search_layout', __('Search layout', 'vicuna'), array(&$this, 'get_element_layout'), $file, 'layout', array('template' => 'search'));
-        add_settings_field('404_layout', __('404 layout', 'vicuna'), array(&$this, 'get_element_layout'), $file, 'layout', array('template' => '404'));
+        add_settings_section('skin', __('Skin', 'vicuna'), array($this, 'get_section'), $file);
+        add_settings_field('skin', __('Skin', 'vicuna'), array($this, '_get_element_select'), $file, 'skin', array('vicuna-skin', $config -> enable_skins));
+        add_settings_field('fixed_width', __('Fixed width', 'vicuna'), array($this, '_get_element_select'), $file, 'skin', array('vicuna-fixed_width', $config -> enable_fixed_widths));
+        add_settings_field('eye_catch', __('Eye catch type', 'vicuna'), array($this, '_get_element_select'), $file, 'skin', array('vicuna-eye_catch', $config -> enable_eye_catches)); 
+        // add_settings_field('eye_catch_image', __('Eye catch image', 'vicuna'), array($this, 'get_element_eye_catch_image'), $file, 'skin');
+        add_settings_section('layout', __('Layout', 'vicuna'), array($this, 'get_section'), $file);
+        add_settings_field('index_layout', __('Index layout', 'vicuna'), array($this, 'get_element_layout'), $file, 'layout', array('template' => 'index'));
+        add_settings_field('category_layout', __('Category layout', 'vicuna'), array($this, 'get_element_layout'), $file, 'layout', array('template' => 'category'));
+        add_settings_field('archive_layout', __('Archive layout', 'vicuna'), array($this, 'get_element_layout'), $file, 'layout', array('template' => 'archive'));
+        add_settings_field('tag_layout', __('Tag layout', 'vicuna'), array($this, 'get_element_layout'), $file, 'layout', array('template' => 'tag'));
+        add_settings_field('page_layout', __('Page layout', 'vicuna'), array($this, 'get_element_layout'), $file, 'layout', array('template' => 'page'));
+        add_settings_field('single_layout', __('Single layout', 'vicuna'), array($this, 'get_element_layout'), $file, 'layout', array('template' => 'single'));
+        add_settings_field('search_layout', __('Search layout', 'vicuna'), array($this, 'get_element_layout'), $file, 'layout', array('template' => 'search'));
+        add_settings_field('404_layout', __('404 layout', 'vicuna'), array($this, 'get_element_layout'), $file, 'layout', array('template' => '404'));
 
-        add_settings_section('enable_color', __('Enable color', 'vicuna'), array(&$this, 'get_section'), $file);
-        add_settings_field('enable_color', __('Enable color', 'vicuna'), array(&$this, '_get_element_radio'), $file, 'enable_color', array('vicuna-enable_color', $config -> enable_enable_color));
+        add_settings_section('enable_color', __('Enable color', 'vicuna'), array($this, 'get_section'), $file);
+        add_settings_field('enable_color', __('Enable color', 'vicuna'), array($this, '_get_element_radio'), $file, 'enable_color', array('vicuna-enable_color', $config -> enable_enable_color));
 
-        add_settings_section('color', __('Color', 'vicuna'), array(&$this, 'get_section'), $file);
-        add_settings_field('color', __('Color information', 'vicuna'), array(&$this, 'get_element_color_information'), $file, 'color');
-        add_settings_field('search', __('Search', 'vicuna'), array(&$this, 'get_element_color_search'), $file, 'color');
-        add_settings_field('popular', __('Popular color', 'vicuna'), array(&$this, 'get_element_popular_color'), $file, 'color');
-        add_settings_field('recent', __('Recent upload', 'vicuna'), array(&$this, 'get_element_recent_upload'), $file, 'color');
-        add_settings_field('list', __('Color list', 'vicuna'), array(&$this, 'get_element_color_list'), $file, 'color');
+        add_settings_section('color', __('Color', 'vicuna'), array($this, 'get_section'), $file);
+        add_settings_field('color', __('Color information', 'vicuna'), array($this, 'get_element_color_information'), $file, 'color');
+        add_settings_field('search', __('Search', 'vicuna'), array($this, 'get_element_color_search'), $file, 'color');
+        add_settings_field('popular', __('Popular color', 'vicuna'), array($this, 'get_element_popular_color'), $file, 'color');
+        add_settings_field('recent', __('Recent upload', 'vicuna'), array($this, 'get_element_recent_upload'), $file, 'color');
+        add_settings_field('list', __('Color list', 'vicuna'), array($this, 'get_element_color_list'), $file, 'color');
 
         ?><div class="wrap">
     <h2><?php _e('Vicuna Theme Manager', 'vicuna')?></h2>
