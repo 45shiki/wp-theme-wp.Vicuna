@@ -199,7 +199,7 @@ class VicunaConfigPager extends VicunaPager {
         add_settings_section('skin', __('Skin', 'vicuna'), array($this, 'get_section'), $file);
         add_settings_field('skin', __('Skin', 'vicuna'), array($this, '_get_element_select'), $file, 'skin', array('vicuna-skin', $config -> enable_skins));
         add_settings_field('fixed_width', __('Fixed width', 'vicuna'), array($this, '_get_element_select'), $file, 'skin', array('vicuna-fixed_width', $config -> enable_fixed_widths));
-        add_settings_field('eye_catch', __('Eye catch type', 'vicuna'), array($this, '_get_element_select'), $file, 'skin', array('vicuna-eye_catch', $config -> enable_eye_catches)); 
+        add_settings_field('eye_catch', __('Eye catch', 'vicuna'), array($this, '_get_element_select'), $file, 'skin', array('vicuna-eye_catch', $config -> enable_eye_catches)); 
         // add_settings_field('eye_catch_image', __('Eye catch image', 'vicuna'), array($this, 'get_element_eye_catch_image'), $file, 'skin');
         add_settings_section('layout', __('Layout', 'vicuna'), array($this, 'get_section'), $file);
         add_settings_field('index_layout', __('Index layout', 'vicuna'), array($this, 'get_element_layout'), $file, 'layout', array('template' => 'index'));
