@@ -14,7 +14,7 @@ ul.number_pager{
 	list-style:none;
 	_height: 1px;
 	min-height: 1px;
-	/*¥*//*/
+	/*\*//*/
 	height: 1px;
 	overflow: hidden;
 	/**/
@@ -39,4 +39,29 @@ ul.number_pager li a{
 }
 span.replay{
 	margin-left:0.5em;
+}
+
+p.number_pager{
+	list-style:none;
+	_height: 1px;
+	min-height: 1px;
+    margin: 0 30px 10px;
+	/*\*//*/
+	height: 1px;
+	overflow: hidden;
+	/**/
+}
+p.number_pager:after{
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+p.number_pager .current{
+	font-weight:bold;
+}
+p.number_pager a{
+	padding:0.25em 0.5em;
+	border-color:#CCC;
 }

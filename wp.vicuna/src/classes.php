@@ -918,11 +918,14 @@ class VicunaTheme {
             $paginate_format = (substr($paginate_base, -1 , 1) === '/'? '': '/') . user_trailingslashit('page/%#%/', 'paged');
             $paginate_base .= '%_%';
         }
-        echo paginate_links(array('base' => $paginate_base,
+        $page = paginate_links(array('base' => $paginate_base,
                 'format' => $paginate_format,
                 'total' => $wp_query -> max_num_pages,
                 'mid_size' => 5,
                 'current' => ($paged ? $paged : 1)));
+        if ( $page ){
+            echo '<p class="number_pager">' . $page . '</p>';
+        }
     }
 
     function paging_pagenavi($args = null)
