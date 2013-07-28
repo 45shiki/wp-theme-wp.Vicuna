@@ -44,7 +44,7 @@
 		</dd>
 		<dt><?php _e('Feeds', 'vicuna')?></dt>
 		<dd class="feed">
-			<ul>
+			<ul class="feed">
 				<li class="rss"><a href="<?php bloginfo('rss2_url')?>"><?php _e('All Entries', 'vicuna')?>(RSS2.0)</a></li>
 				<li class="atom"><a href="<?php bloginfo('atom_url')?>"><?php _e('All Entries', 'vicuna')?>(Atom)</a></li>
 				<li class="rss"><a href="<?php bloginfo('comments_rss2_url')?>"><?php _e('All Comments', 'vicuna')?>(RSS2.0)</a></li>
