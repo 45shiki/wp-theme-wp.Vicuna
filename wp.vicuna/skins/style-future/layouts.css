@@ -4,10 +4,10 @@
 Skin Name: Future Skin - Layout Module
 Author: vicuna.jp
 
-Layout Class: single, double
-Eye Cach Class: eye-u, eye-c, eye-h, eye-hb
-Set Class: double eye-u
-Fixed Width Class: f800, f850, f900, f950, f1000
+Layout: single, double
+Eye catch: eye-u, eye-c, eye-h, eye-hb
+Special: double eye-u
+Fixed width: f800, f850, f900, f950, f1000
 */
 
 body {
@@ -104,7 +104,7 @@ body.single div#utilities dl dd dd {
 body.single div#utilities {
 	_height: 1px;
 	min-height: 1px;
-	/*¥*//*/
+	/*\*//*/
 	height: 1px;
 	overflow: hidden;
 	/**/

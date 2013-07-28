@@ -4,11 +4,11 @@
 Skin Name: Flat Skin - Layout Module
 Author: vicuna.jp
 
-- Layout: single, double-l, double, multi, multi2-l, multi2, special1, special2
-- Eye catch: eye-h, eye-hb, eye-m, eye-c
-- Special: multi eye-c set1, multi2 eye-c set2
-- Fixed width: f800, f850, f900, f950, f1000
-- Other Class: gt, al
+Layout: single, double-l, double, multi, multi2-l, multi2, special1, special2
+Eye catch: eye-h, eye-hb, eye-m, eye-c
+Special: multi eye-c set1, multi2 eye-c set2
+Fixed width: f800, f850, f900, f950, f1000
+Other Class: gt, al
 */
 
 body {
@@ -86,7 +86,7 @@ body.single div#utilities ul.thumb li {
 body.single div#utilities {
 	_height: 1px;
 	min-height: 1px;
-	/*¥*//*/
+	/*\*//*/
 	height: 1px;
 	overflow: hidden;
 	/**/
