@@ -1,4 +1,4 @@
-# wp.Vicuna Ext. 用日本語リソース (UTF-8) 
+# wp.Vicuna Ext. 用日本語リソース (UTF-8)
 # Japanese (UTF-8) translation for WordPress
 #
 # Copyright 2008 ma38su.sourceforge.jp

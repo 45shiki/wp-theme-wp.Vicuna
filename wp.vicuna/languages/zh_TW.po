@@ -1,4 +1,4 @@
-# wp.Vicuna Ext. 用中国語（繁体）リソース (UTF-8) 
+# wp.Vicuna Ext. 用中国語（繁体）リソース (UTF-8)
 # Chinese zh_TW (UTF-8) translation for WordPress
 #
 # このファイルは wp.Vicuna Ext. 本體と同じライセンスのもと配布されています。

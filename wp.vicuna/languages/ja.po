@@ -1,4 +1,4 @@
-# wp.Vicuna 2.0.0 以降用日本語リソース (UTF-8) 
+# wp.Vicuna 2.0.0 以降用日本語リソース (UTF-8)
 # Japanese (UTF-8) translation for wp.Vicuna WordPress theme
 # Copyright 2010 SPaiS Inc.
 # This file is licensed GPL Version 2.

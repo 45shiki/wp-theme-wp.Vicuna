@@ -105,7 +105,7 @@ pre {
 	overflow: auto;
 	width: 90%;
 	_width: 95%; /* for IE6 */
-	
+
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -534,7 +534,7 @@ ul#flip2 {
 }
 
 /*=========================
-  div#Comments, 
+  div#Comments,
   div#Trackbacks
 =========================*/
 
@@ -698,7 +698,7 @@ div#utilities dl dd ul.feed li a {
 	background: url(images/icon/icon_feed.gif) no-repeat;
 }
 
-/* div#utilities dl dd >  
+/* div#utilities dl dd >
 ---------------*/
 
 div#utilities dl dd ul ul {

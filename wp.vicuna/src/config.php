@@ -3,17 +3,17 @@
  * wp.Vicuna theme manager
  * http://wp.vicuna.jp/
  * http://spais.co.jp/wp.vicuna/
- * 
+ *
  * WordPress 2.8.3 and Newer
  * PHP Version 4 and 5
- * 
+ *
  * LICENSE: This source file is subject to version 2.0 of the GPL
  * that is available through the world-wide-web at the following URI:
  * http://wordpress.org/about/gpl/
- * 
+ *
  * @package wp.Vicuna
  * @version 2.0.3
- * @author HAYASHI Ryo <ryo@spais.co.jp> 
+ * @author HAYASHI Ryo <ryo@spais.co.jp>
  * @copyright 2010 SPaiS Inc.
  * @license http://wordpress.org/about/gpl/ GPL 2.0
  * @link http://wp.vicuna.jp/
@@ -22,24 +22,24 @@
 
 /**
  * Initial function
- * 
- * @return void 
+ *
+ * @return void
  */
 function vicuna_config()
 {
     $config_page = &VicunaConfigPager :: i('VicunaConfigPager');
     $config_page -> display();
-} 
+}
 
 /**
  * Config page class
- * 
+ *
  * @package wp.Vicuna
- * @author HAYASHI Ryo<ryo@spais.co.jp> 
+ * @author HAYASHI Ryo<ryo@spais.co.jp>
  */
 class VicunaConfigPager extends VicunaPager {
     /**
-     * 
+     *
      * @var string Option group name
      */
     var $opt_group = 'vicuna_config';
@@ -54,7 +54,7 @@ class VicunaConfigPager extends VicunaPager {
         <label><input type="radio" name="vicuna-eye_catch-image-type" value="file" /><?php _e('File', 'vicuna')?></label>
         <input type="file" name="vicuna-eye_catch-image" />
 <?php
-    } 
+    }
 
     function get_element_color_information()
     {
@@ -74,7 +74,7 @@ class VicunaConfigPager extends VicunaPager {
             </div>
         </div></div>
 <?php
-    } 
+    }
 
     function get_element_color_search()
     {
@@ -84,7 +84,7 @@ class VicunaConfigPager extends VicunaPager {
 		<span id="vicunaColorSearchPaging"><span class="prev disable">&lt;-</span><span class="next disable">-&gt;</span></span>
 		<ul id="vicunaColorSearchResults"></ul>
 <?php
-    } 
+    }
 
     function get_element_popular_color()
     {
@@ -92,7 +92,7 @@ class VicunaConfigPager extends VicunaPager {
         ?>
 		<ul id="popularColors"><li class="loading"><?php _e('Loading...', 'vicuna')?></li></ul>
 <?php
-    } 
+    }
 
     function get_element_recent_upload()
     {
@@ -100,7 +100,7 @@ class VicunaConfigPager extends VicunaPager {
         ?>
 		<ul id="recentUploads"><li class="loading"><?php _e('Loading...', 'vicuna')?></li></ul>
 <?php
-    } 
+    }
 
     function get_element_color_list()
     {
@@ -108,12 +108,12 @@ class VicunaConfigPager extends VicunaPager {
         ?>
 		<ul id="colorThemes"></ul>
 <?php
-    } 
+    }
 
     /**
      * Generate title option element
-     * 
-     * @return void 
+     *
+     * @return void
      */
     function get_element_title()
     {
@@ -123,7 +123,7 @@ class VicunaConfigPager extends VicunaPager {
         foreach($config -> enable_titles as $key => $value) {
             $selected = $option === $key? ' selected="selected"': null;
             $opts[] = sprintf('<option value="%s"%s>%s</option>', $key, $selected, $value);
-        } 
+        }
         $sels[] = sprintf('<select name="vicuna-title-front">%s</select>', implode("\n", $opts));
 
         $option = $config -> get_option('vicuna-title-separator');
@@ -131,7 +131,7 @@ class VicunaConfigPager extends VicunaPager {
         foreach($config -> enable_separators as $key => $value) {
             $selected = $option === $key? ' selected="selected"': null;
             $opts[] = sprintf('<option value="%s"%s>%s</option>', $key, $selected, $value);
-        } 
+        }
         $sels[] = sprintf('<select name="vicuna-title-separator">%s</select>', implode("\n", $opts));
 
         $option = $config -> get_option('vicuna-title-rear');
@@ -139,20 +139,20 @@ class VicunaConfigPager extends VicunaPager {
         foreach($config -> enable_titles as $key => $value) {
             $selected = $option === $key? ' selected="selected"': null;
             $opts[] = sprintf('<option value="%s"%s>%s</option>', $key, $selected, $value);
-        } 
+        }
         $sels[] = sprintf('<select name="vicuna-title-rear">%s</select>', implode("\n", $opts));
 
         echo implode("\n", $sels);
-    } 
+    }
 
     /**
      * Generate layout option element
-     * 
+     *
      * Enable args
      * - template => Template type
-     * 
+     *
      * @param  $args array
-     * @return void 
+     * @return void
      */
     function get_element_layout($args)
     {
@@ -164,13 +164,13 @@ class VicunaConfigPager extends VicunaPager {
             if (is_integer($value)) $value = $label;
             $selected = $value === $option? ' selected="selected"': null;
             $rows[] = sprintf('<option value="%s"%s>%s</option>', $value, $selected, $label);
-        } 
+        }
         printf('<select name="vicuna-layout-%1$s" id="vicuna-layout-%1$s">%2$s</select>', $args['template'], implode("\n", $rows));
-    } 
+    }
 
     /**
      * (non-PHPdoc)
-     * 
+     *
      * @see wp-content/themes/wp.vicuna/src/VicunaPager#display()
      */
     function display()
@@ -199,7 +199,7 @@ class VicunaConfigPager extends VicunaPager {
         add_settings_section('skin', __('Skin', 'vicuna'), array($this, 'get_section'), $file);
         add_settings_field('skin', __('Skin', 'vicuna'), array($this, '_get_element_select'), $file, 'skin', array('vicuna-skin', $config -> enable_skins));
         add_settings_field('fixed_width', __('Fixed width', 'vicuna'), array($this, '_get_element_select'), $file, 'skin', array('vicuna-fixed_width', $config -> enable_fixed_widths));
-        add_settings_field('eye_catch', __('Eye catch', 'vicuna'), array($this, '_get_element_select'), $file, 'skin', array('vicuna-eye_catch', $config -> enable_eye_catches)); 
+        add_settings_field('eye_catch', __('Eye catch', 'vicuna'), array($this, '_get_element_select'), $file, 'skin', array('vicuna-eye_catch', $config -> enable_eye_catches));
         // add_settings_field('eye_catch_image', __('Eye catch image', 'vicuna'), array($this, 'get_element_eye_catch_image'), $file, 'skin');
         add_settings_section('layout', __('Layout', 'vicuna'), array($this, 'get_section'), $file);
         add_settings_field('index_layout', __('Index layout', 'vicuna'), array($this, 'get_element_layout'), $file, 'layout', array('template' => 'index'));
@@ -270,11 +270,11 @@ class VicunaConfigPager extends VicunaPager {
     //]]>
     </script>
 </div><?php
-        } 
+        }
 
         /**
          * (non-PHPdoc)
-         * 
+         *
          * @see wp-content/themes/wp.vicuna/src/VicunaPager#validate($vp)
          */
         function validate($vp)
@@ -320,7 +320,7 @@ class VicunaConfigPager extends VicunaPager {
                     $this -> valid_values[$name] = $value;
                     if (isset($config -> skin_data[$value]['Special']))
                         $this -> valid_values['vicuna-special'] = $config -> skin_data[$value]['Special'];
-                } 
+                }
                 break;
             case 'vicuna-eye_catch':
                 if (!in_array($value, $config -> enable_eye_catches))
@@ -386,15 +386,15 @@ class VicunaConfigPager extends VicunaPager {
                 } else {
                     $this -> valid_values[$name] = array('themeid' => $matches[1], 'title' => $matches[2],
                         'hex' => array($matches[3], $matches[4], $matches[5], $matches[6], $matches[7]));
-                } 
-            } 
-        } 
+                }
+            }
+        }
         return empty($this -> errors);
-    } 
+    }
 
     /**
      * (non-PHPdoc)
-     * 
+     *
      * @see wp-content/themes/wp.vicuna/src/VicunaPager#after_update()
      */
     function after_update()
@@ -407,20 +407,20 @@ class VicunaConfigPager extends VicunaPager {
             $last_id = $config -> get_option('vicuna-color-themes-last_id');
             $this -> valid_values['vicuna-color']['themeid'] = 'm' . (++$last_id);
             update_option('vicuna-color-themes-last_id', $last_id);
-        } 
+        }
         $color_list = $config -> get_option('vicuna-color-themes');
         $color_list[$this -> valid_values['vicuna-color']['themeid']] = $this -> valid_values['vicuna-color'];
         update_option('vicuna-color-themes', $color_list);
-    } 
+    }
     // Create form element {{{
     /**
      * Get section
-     * 
-     * @return void 
+     *
+     * @return void
      */
     function get_section()
     {
-    } 
+    }
 
     function _get_element_select($args)
     {
@@ -431,9 +431,9 @@ class VicunaConfigPager extends VicunaPager {
             if (is_integer($value)) $value = $label;
             $selected = $current === (string) $value? ' selected="selected"': null;
             $rows[] = sprintf('<option value="%s"%s>%s</option>', $value, $selected, $label);
-        } 
+        }
         printf('<select name="%1$s" id="%1$s">%2$s</select>', $args[0], implode("\n", $rows));
-    } 
+    }
 
     function _get_element_radio($args)
     {
@@ -444,9 +444,9 @@ class VicunaConfigPager extends VicunaPager {
             $checked = $current === (string) $value? ' checked="checked"': null;
             printf('<label><input type="radio" name="%s" value="%s"%s />%s</label>',
                 $args[0], $value, $checked, $label);
-        } 
-    } 
+        }
+    }
     // }}} Create form element
-} 
+}
 // vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4:
 ?>

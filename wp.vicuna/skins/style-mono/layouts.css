@@ -30,7 +30,7 @@ div#footer {
 /*========================================
 
 	Single Column Layout
-	
+
 	<body class="single">
 
 	┏━━━┓
@@ -290,7 +290,7 @@ body.multi2-l div#main {
 
 body.multi2-l div#utilities {
 	float: left;
-	clear: left; 
+	clear: left;
 	width: 45%;
 }
 

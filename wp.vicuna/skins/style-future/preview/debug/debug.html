@@ -1,25 +1,25 @@
 <script type="text/javascript">
 //<![CDATA[
-					 
+					
 	$("html").css("margin-right", "120px");
-	
+
 	var layoutClass ="single double double-l multi multi2 multi2-l set1 set2 set3";
-	var eyeCatchClass ="eye-h eye-hb eye-m eye-u eye-c set1 set2 set3";	
+	var eyeCatchClass ="eye-h eye-hb eye-m eye-u eye-c set1 set2 set3";
 	var widthClass ="f800 f850 f900 f950 f1000";
 	var otherClass ="al gt gh";
-	
+
 	function setLayout(type) {
 		$("body").removeClass(layoutClass).addClass(type);
 	};
 
 // Eye Catch
-	
+
 	function setEye(type) {
 		$("body").removeClass(eyeCatchClass).addClass(type);
 	};
-	
+
 // Width
-	
+
 	function setWidth(type) {
 		$("body").removeClass(widthClass).addClass(type);
 	};
@@ -30,7 +30,7 @@
 		$("body").removeClass(layoutClass).removeClass(eyeCatchClass);
 		$("body").addClass(type);
 	};
-	
+
 // Others
 
 	function setOthers(type) {
