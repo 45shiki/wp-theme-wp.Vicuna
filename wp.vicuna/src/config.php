@@ -12,7 +12,7 @@
  * http://wordpress.org/about/gpl/
  *
  * @package wp.Vicuna
- * @version 2.0.3
+ * @version 2.0.4
  * @author HAYASHI Ryo <ryo@spais.co.jp>
  * @copyright 2010 SPaiS Inc.
  * @license http://wordpress.org/about/gpl/ GPL 2.0
