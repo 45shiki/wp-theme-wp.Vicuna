@@ -277,7 +277,7 @@ class Vicuna_Widget_Search extends WP_Widget {
      */
     function widget($args, $instance)
     {
-        $title = empty($instance['title']) ? __('Search') : $instance['title'];
+        $title = empty($instance['title']) ? __('Search', 'vicuna') : $instance['title'];
         $args['after_title'] = sprintf($args['after_title'], 'search');
         echo $args['before_widget'] . $args['before_title'] . $title . $args['after_title'];
 
@@ -463,7 +463,7 @@ class Vicuna_Widget_Meta extends WP_Widget {
      */
     function widget($args, $instance)
     {
-        $title = empty($instance['title']) ? __('Meta') : $instance['title'];
+        $title = empty($instance['title']) ? __('Meta', 'vicuna') : $instance['title'];
         $args['after_title'] = sprintf($args['after_title'], 'meta');
         echo $args['before_widget'] . $args['before_title'] . $title . $args['after_title'];
 
@@ -512,7 +512,7 @@ class Vicuna_Widget_Tag_Cloud extends WP_Widget {
      */
     function widget($args, $instance)
     {
-        $title = empty($instance['title']) ? __('Tag cloud') : $instance['title'];
+        $title = empty($instance['title']) ? __('Tag cloud', 'vicuna') : $instance['title'];
         $args['after_title'] = sprintf($args['after_title'], 'tagCloud');
         $widget = sprintf('%s%s%s%s%s%s', $args['before_widget'], $args['before_title'],
             $title, $args['after_title'], vicuna_tag_cloud('echo=0'), $args['after_widget']);
