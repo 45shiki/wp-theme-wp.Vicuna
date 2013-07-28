@@ -419,13 +419,13 @@ class Vicuna_Widget_Calendar extends WP_Widget {
             while (count($tbody) < 7) $tbody[] = "\t\t\t\t\t<td>&nbsp;</td>";
             $tbodies[] = sprintf('<tr>%s</tr>', implode("\n", $tbody));
 
-            $title = empty($instance['title']) ? __('Calendar') : $instance['title'];
-            $widget = sprintf('%s%s%s%s<table class="calendar" cellpadding="0" cellspacing="0" summary="%%4$s">%s<tr>%s</tr>%s</table>%s',
-                $args['before_widget'], $args['before_title'], $title, $args['after_title'],
+            $widget = sprintf('<table class="calendar" cellpadding="0" cellspacing="0" summary="%%4$s">%s<tr>%s</tr>%s</table>%s',
                 $caption, implode("\n", $theads), implode("\n", $tbodies), $args['after_widget']);
             Vicuna :: cache_add($current, $widget, 'calendar');
         }
-        printf($widget, sprintf(__(' %1$s %2$s ', 'vicuna'), $wp_locale -> get_month($cmonth), $cyear),
+        $title = empty($instance['title']) ? __('Calendar', 'vicuna') : $instance['title'];
+        echo $args['before_widget'], $args['before_title'], $title, $args['after_title'] ;
+        printf($widget, __($current, 'vicuna'),
             __('Older', 'vicuna'), __('Newer', 'vicuna'), __('Monthly calendar', 'vicuna'));
     }
 
