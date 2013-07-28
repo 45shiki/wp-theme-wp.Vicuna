@@ -1041,7 +1041,7 @@ class VicunaTheme {
             $list = wp_list_categories('title_li=0&hierarchical=0&echo=0');
         }
         if (!empty($g_navi_home))
-            $list = sprintf('<li><a href="%1$s" title="%2$s">%2$s</a></li>', get_bloginfo('home'), __('Home')) . $list;
+            $list = sprintf('<li><a href="%1$s" title="%2$s">%2$s</a></li>', get_bloginfo('home'), __('Home', 'vicuna')) . $list;
         printf('<ul id="globalNavi">%s</ul>', $list);
     }
 
